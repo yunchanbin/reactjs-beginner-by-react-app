@@ -27,6 +27,7 @@
   - [- 4.3 Recap](#--43-recap)
 - [5 CREATE REACT APP](#5-create-react-app)
   - [- 5.0 Introduction](#--50-introduction)
+  - [- 5.1 Tour of CRA](#--51-tour-of-cra)
 
 # 2 THE BASICS OF REACT
 
@@ -346,3 +347,13 @@ ReactJS 어플리케이션을 만들기 편하게 만들어줌.
 개발 서버 접근, 자동 새로고침, 어플리케이션 안에 css를 즉각적으로 포함시켜주는 기능 등
 
 먼저, next.js 설치(설치 방법은 강의 영상 참고)
+
+만든 앱의 모든 소스 파일은 src폴더 안에 있어야 함.
+
+> ![](md-img/5.0-3.png)
+> react app이 업데이트 되면서 `ReactDOM.render()` 구문이 폐기되고 `ReactDOM.createRoot()`구문으로 대체됨.
+
+### - 5.1 Tour of CRA
+
+그냥 여기는 강의 두개밖에 없으니 찾아서 다시 보도록 하자.
+https://nomadcoders.co/react-for-beginners/lectures/3280
