@@ -31,6 +31,7 @@
 - [6 EFFECTS](#6-effects)
   - [- 6.0 Introduction](#--60-introduction)
   - [- 6.1 useEffect](#--61-useeffect)
+  - [- 6.2 Deps](#--62-deps)
 
 # 2 THE BASICS OF REACT
 
@@ -380,3 +381,35 @@ console.log로 render 될 때마다 console에 찍히도록 하면, 버튼을 �
 <br>
 
 ### - 6.1 useEffect
+
+![](md-img/6.1-1.png)
+맨 위에 react의 useEffect 기능을 사용하겠다고 써 준다.
+
+- `useEffect([ effect ], [ dependency ])` : 두번째 argument가 바뀌면 첫번째 argument도 같이 리랜더링함.
+  ![](md-img/6.1-2.png)
+
+![](md-img/6.1-3.png)
+이렇게 쓸 수도 있다. api는 한번만 불러오고, 리랜더링은 잘 작동하고 있음.
+
+<br>
+
+### - 6.2 Deps
+
+![](md-img/6.2-1.png)
+이번 시간에는 useEffect에서 두번째 argument는 어떤 역할을 하는지 알아볼 예정.
+
+![](md-img/6.2-2.png)
+타이핑 하는 과정에서 원하지 않는 api 호출이 계속 이루어질 수도 있고,
+![](md-img/6.2-3.png)
+버튼을 누르는데 자꾸 검색이 이루어 질 수도 있음.
+
+다시 말하면, 이런 경우를 방지하기 위해서 useEffect를 쓴다.
+![](md-img/6.2-4.png)
+keword가 바뀔 때는 검색이 정상 작동하지만 버튼을 누를 땐 검색이 되지 않음!
+
+![](md-img/6.2-5.png)
+이렇게 하면 시작될 때는 검색 생략할 수 있음.
+
+state는 변할 때 리랜더링해서 refresh된 UI를 보여주는게 전부였다고 하면, 이제는 state의 값이 변할 때 어떤 Effect도 실행시켜줄 수 있게 됐다.
+
+<br>
