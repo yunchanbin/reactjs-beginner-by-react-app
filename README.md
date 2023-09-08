@@ -32,6 +32,7 @@
   - [- 6.0 Introduction](#--60-introduction)
   - [- 6.1 useEffect](#--61-useeffect)
   - [- 6.2 Deps](#--62-deps)
+  - [- 6.4 Cleanup](#--64-cleanup)
 
 # 2 THE BASICS OF REACT
 
@@ -413,3 +414,11 @@ keword가 바뀔 때는 검색이 정상 작동하지만 버튼을 누를 땐 �
 state는 변할 때 리랜더링해서 refresh된 UI를 보여주는게 전부였다고 하면, 이제는 state의 값이 변할 때 어떤 Effect도 실행시켜줄 수 있게 됐다.
 
 <br>
+
+### - 6.4 Cleanup
+
+- cleanup function
+  ![](md-img/6.4-1.png)
+  ![](md-img/6.4-2.png)
+  return에 function을 넣어주면 사라질 때 적용.
+  위 두 코드는 동일한 코드.
