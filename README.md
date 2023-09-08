@@ -28,6 +28,9 @@
 - [5 CREATE REACT APP](#5-create-react-app)
   - [- 5.0 Introduction](#--50-introduction)
   - [- 5.1 Tour of CRA](#--51-tour-of-cra)
+- [6 EFFECTS](#6-effects)
+  - [- 6.0 Introduction](#--60-introduction)
+  - [- 6.1 useEffect](#--61-useeffect)
 
 # 2 THE BASICS OF REACT
 
@@ -353,7 +356,27 @@ ReactJS 어플리케이션을 만들기 편하게 만들어줌.
 > ![](md-img/5.0-3.png)
 > react app이 업데이트 되면서 `ReactDOM.render()` 구문이 폐기되고 `ReactDOM.createRoot()`구문으로 대체됨.
 
+<br>
+
 ### - 5.1 Tour of CRA
 
 그냥 여기는 강의 두개밖에 없으니 찾아서 다시 보도록 하자.
 https://nomadcoders.co/react-for-beginners/lectures/3280
+
+<br>
+
+# 6 EFFECTS
+
+### - 6.0 Introduction
+
+![](md-img/6.0-1.png)
+console.log로 render 될 때마다 console에 찍히도록 하면, 버튼을 누를 때마다 리랜더링 된다.
+![](md-img/6.0-2.png)
+
+근데 예를 들어, 버튼을 누르면 리랜더링은 작동하지만, 외부 API에서 데이터를 불러오는데 처음 한번만 불러오고 버튼 누를 때마다 불러오고 싶진 않을 수 있다.
+
+즉, 특정 코드들이 첫번째 coponent reder에서만 실행되도록 하는 방법을 알아야 한다. (리랜더링 될 때는 특정 코드 건너 뜀.)
+
+<br>
+
+### - 6.1 useEffect
