@@ -1,4 +1,5 @@
 import Button from "./Button";
+import SearchInput from "./SearchInput";
 import { useState, useEffect } from "react";
 
 function App() {
@@ -22,12 +23,7 @@ function App() {
   }, [counter]);
   return (
     <div>
-      <input
-        value={keyword}
-        onChange={onChange}
-        type="text"
-        placeholder="Searc here..."
-      ></input>
+      <SearchInput value={keyword} onChange={onChange}></SearchInput>
       <h1>{counter}</h1>
       <Button onClick={onClick} text={"Continue"}></Button>
     </div>
