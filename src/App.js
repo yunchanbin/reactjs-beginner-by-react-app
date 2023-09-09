@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 function App() {
-  const [toDo, setToDo] = useState();
+  const [toDo, setToDo] = useState("");
   const [toDos, setToDos] = useState([]);
   const onChange = (event) => setToDo(event.target.value);
   const onSubmit = (event) => {

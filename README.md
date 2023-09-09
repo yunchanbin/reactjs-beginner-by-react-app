@@ -33,6 +33,9 @@
   - [- 6.1 useEffect](#--61-useeffect)
   - [- 6.2 Deps](#--62-deps)
   - [- 6.4 Cleanup](#--64-cleanup)
+- [7 PRACTICE MOVIE APP](#7-practice-movie-app)
+  - [- 7.0 To Do List part One](#--70-to-do-list-part-one)
+  - [- 7.1 To Do List part Two](#--71-to-do-list-part-two)
 
 # 2 THE BASICS OF REACT
 
@@ -422,3 +425,15 @@ state는 변할 때 리랜더링해서 refresh된 UI를 보여주는게 전부�
   ![](md-img/6.4-2.png)
   return에 function을 넣어주면 사라질 때 적용.
   위 두 코드는 동일한 코드.
+
+# 7 PRACTICE MOVIE APP
+
+### - 7.0 To Do List part One
+
+![](md-img/7.0-1.png)
+13라인에 array 바꾸는 법 참고. `toDos.push()`를 쓰면 새로고침이 안됨. toDos를 바꿀 땐 반드시 setToDos로 바꿔야 함.
+toDo를 a,b,c 순서대로 추가하면 ["c","b","a"]가 됨.
+
+<br>
+
+### - 7.1 To Do List part Two
