@@ -37,6 +37,8 @@
   - [- 7.0 To Do List part One](#--70-to-do-list-part-one)
   - [- 7.1 To Do List part Two](#--71-to-do-list-part-two)
   - [- 7.2 Coin Tracker](#--72-coin-tracker)
+  - [- 7.3 Movies App part One](#--73-movies-app-part-one)
+  - [- 7.4 Movies App part Two](#--74-movies-app-part-two)
 
 # 2 THE BASICS OF REACT
 
@@ -469,3 +471,34 @@ map 함수에서 자동으로 index를 받을 수 있고, index를 이용해서 
 
 ![](md-img/7.2-3.png)
 <small>근데 저기서는 또 백틱에다가 달러사인 달아서 쓰네...</small>
+
+<br>
+
+### - 7.3 Movies App part One
+
+movies를 불러오는 api 동작하도록 코드 작성
+![](md-img/7.3-1.png)
+
+.then은 아직 안 배우긴 했는데, 요즘은 then 대신에 async-await를 사용한다.
+![](md-img/7.3-2.png)
+
+좀 더 간단하게도 가능
+![](md-img/7.3-3.png)
+
+movies를 가져와서 화면에 뿌려주는 코드
+![](md-img/7.3-4.png)
+참고로 react에서 `.map`으로 만들어지는 element들은 key가 필요함
+
+![](md-img/7.3-5.png)
+여기서도 map 쓰는데 key 안 써줘서 오류메세지 나옴.
+
+![](md-img/7.3-6.png)
+하나의 movie 안에서는 genre가 unique 하므로 key로 사용하기에 적당하다.
+
+![](md-img/7.3-7.png)
+![](md-img/7.3-8.png)
+이미지도 얻을 수 있다.
+
+<br>
+
+### - 7.4 Movies App part Two
