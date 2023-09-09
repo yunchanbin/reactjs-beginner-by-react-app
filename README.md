@@ -36,6 +36,7 @@
 - [7 PRACTICE MOVIE APP](#7-practice-movie-app)
   - [- 7.0 To Do List part One](#--70-to-do-list-part-one)
   - [- 7.1 To Do List part Two](#--71-to-do-list-part-two)
+  - [- 7.2 Coin Tracker](#--72-coin-tracker)
 
 # 2 THE BASICS OF REACT
 
@@ -449,3 +450,22 @@ react가 기본적으로 list에 있는 모든 item들을 인식하기 때문.
 
 ![](md-img/7.1-3.png)
 map 함수에서 자동으로 index를 받을 수 있고, index를 이용해서 몇번째 li인지 알 수 있다.
+
+코드 작성
+![](md-img/7.1-4.png)
+
+<br>
+
+### - 7.2 Coin Tracker
+
+코드 작성
+![](md-img/7.2-1.png)
+
+여기서 만약에 coins의 초기값을 생략하면 오류가 난다.
+![](md-img/7.2-2.png)
+
+이유는 아래 return되는 컴포넌트가 coins.length를 호출하고 있기 때문.
+![](md-img/7.2-3.png)
+
+![](md-img/7.2-3.png)
+<small>근데 저기서는 또 백틱에다가 달러사인 달아서 쓰네...</small>
