@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   const [toDo, setToDo] = useState("");
@@ -12,7 +12,15 @@ function App() {
     setToDo("");
     setToDos((currentArray) => [toDo, ...currentArray]);
   };
-  console.log(toDos);
+
+  // const onDelete = (event) => {
+  //   const li = event.target.parentElement.id;
+  //   console.log(li);
+  //   setToDos((currentArray) =>
+  //     currentArray.filter((item) => item !== parseInt(li.id))
+  //   );
+  // };
+
   return (
     <div>
       <h1>My To Dos ({toDos.length})</h1>
@@ -25,6 +33,12 @@ function App() {
         ></input>
         <button>Add To Do</button>
       </form>
+      <hr />
+      <ul>
+        {toDos.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </div>
   );
 }

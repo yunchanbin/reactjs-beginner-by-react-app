@@ -437,3 +437,15 @@ toDo를 a,b,c 순서대로 추가하면 ["c","b","a"]가 됨.
 <br>
 
 ### - 7.1 To Do List part Two
+
+같은 component의 list 를 render할 때 key라는 prop을 넣어줘야 함.
+react가 기본적으로 list에 있는 모든 item들을 인식하기 때문.
+
+![](md-img/7.1-2.png)
+여기 li에 key 입력하라는 오류 메세지가 뜸. 아래쪽 설명 참고
+
+![](md-img/7.1-1.png)
+두가지 형태로 작성할 수 있다.
+
+![](md-img/7.1-3.png)
+map 함수에서 자동으로 index를 받을 수 있고, index를 이용해서 몇번째 li인지 알 수 있다.
