@@ -502,3 +502,23 @@ movies를 가져와서 화면에 뿌려주는 코드
 <br>
 
 ### - 7.4 Movies App part Two
+
+![](md-img/7.4-1.png)
+App.js
+
+![](md-img/7.4-2.png)
+Movies.js
+
+component 파일을 따로 만들어서 사용.
+App.js에 Movie에 key는 React에서만 알아보기 위해서 쓰는거.
+
+![](md-img/7.4-3.png)
+array type 정하는 거 참고.
+
+- Reac Router : 리액트에서 페이지 전환을 도와줌.
+
+`$ npm install react-router-dom` 으로 설치
+
+이제는 코드를 바꾸거나 이동시켜야 하는데, 이제는 스크린 단위로 생각해야 함.(하나의 스크린을 route라고 보면 된다.)
+
+App.js는 더이상 movies를 보여주는게 아니라 router들을 render 한다.
