@@ -41,6 +41,7 @@
   - [- 7.4 Movies App part Two](#--74-movies-app-part-two)
   - [- React Router](#--react-router)
   - [- 7.6 Parameters](#--76-parameters)
+  - [- 7.7 Publishing](#--77-publishing)
 
 # 2 THE BASICS OF REACT
 
@@ -579,3 +580,26 @@ useParms는 이름과 함께 object로 날아오기 때문에 그 중에서 {id}
 ![](md-img/7.6-8.png)
 
 <br>
+
+### - 7.7 Publishing
+
+`$ npm i gh-pages`
+결과물을 github pages에 업로드 할 수 있게 해주는 패키지 설치
+
+`$ npm run build`
+
+- build : production ready code를 생성.(production ready란 코드가 압축되고 준비되는 모든 과정)
+  완료되면 build 폴더가 하나 생김.
+
+![](md-img/7.7-1.png)
+package.json에 homepage 항목을 위와 같이 추가
+
+![](md-img/7.7-2.png)
+script에 가서 deploy 명령어 추가. gh-pages 실행 후 디렉토리 'build'를 맨 아래에적은 homepage 웹사이트에 업로드 하는 것.
+
+![](md-img/7.7-3.png)
+predeploy는 deploy를 실행시키면 자동으로 실행되는 코드.
+
+![](md-img/7.7-3.png)
+`$ npm run deploy`
+이제는 deploy만 실행해도 run build와 gh-pages -d build가 자동으로 실행된다.
