@@ -554,3 +554,28 @@ Movie.js로 다시 돌아와서 Link를 import 하고 `<Link to="[주소]">  </L
 <br>
 
 ### - 7.6 Parameters
+
+path에 이름을
+![](md-img/7.6-1.png)
+이런 식으로 쓰게 됨.
+
+이제 id가 필요해 졌으니 Home.js랑 Movie.js로 가서 prop에 id를 추가해주자(cmd 누른 상태로 component 클릭하면 바로 파일로 이동)
+
+![](md-img/7.6-2.png)
+Home.js에서 prop으로 movie.id를 보내주고,
+![](md-img/7.6-3.png)
+Movie.js에서 shortcut으로 id를 받아와서 Link 뒤에 추가해줌.
+
+이제 Detail.js에서 받아오는 id에 따라 보여지는 내용이 달라지도록 영화 상세 페이지를 만들어야 하는데, useParams를 쓴다.
+![](md-img/7.6-4.png)
+그냥 useParams 쓰기만 했는데 id를 가져올 수 있음
+![](md-img/7.6-5.png)
+useParms는 이름과 함께 object로 날아오기 때문에 그 중에서 {id}만 가져오는 법 복습.
+![](md-img/7.6-6.png)
+
+이제 id를 아니까 영화 정보를 가져올 수 있다.
+![](md-img/7.6-7.png)
+해당 영화의 정보를 json으로 받아왔음
+![](md-img/7.6-8.png)
+
+<br>
