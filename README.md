@@ -42,6 +42,7 @@
   - [- React Router](#--react-router)
   - [- 7.6 Parameters](#--76-parameters)
   - [- 7.7 Publishing](#--77-publishing)
+  - [- 7.9 Style](#--79-style)
 
 # 2 THE BASICS OF REACT
 
@@ -600,6 +601,16 @@ script에 가서 deploy 명령어 추가. gh-pages 실행 후 디렉토리 'buil
 ![](md-img/7.7-3.png)
 predeploy는 deploy를 실행시키면 자동으로 실행되는 코드.
 
-![](md-img/7.7-3.png)
+![](md-img/7.7-4.png)
 `$ npm run deploy`
 이제는 deploy만 실행해도 run build와 gh-pages -d build가 자동으로 실행된다.
+
+![](md-img/7.7-5.png)
+publish 할 때는 path에 process.env.PUBLIC_URL를 추가하거나 Router basename에 process.env.PUBLIC_URL를 추가해야 한다고 함.
+
+<br>
+
+### - 7.9 Style
+
+![](md-img/7.8-5.png)
+글자 수 줄이기
