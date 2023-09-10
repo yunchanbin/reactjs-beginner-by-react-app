@@ -39,6 +39,8 @@
   - [- 7.2 Coin Tracker](#--72-coin-tracker)
   - [- 7.3 Movies App part One](#--73-movies-app-part-one)
   - [- 7.4 Movies App part Two](#--74-movies-app-part-two)
+  - [- React Router](#--react-router)
+  - [- 7.6 Parameters](#--76-parameters)
 
 # 2 THE BASICS OF REACT
 
@@ -522,3 +524,33 @@ array type 정하는 거 참고.
 이제는 코드를 바꾸거나 이동시켜야 하는데, 이제는 스크린 단위로 생각해야 함.(하나의 스크린을 route라고 보면 된다.)
 
 App.js는 더이상 movies를 보여주는게 아니라 router들을 render 한다.
+
+<br>
+
+### - React Router
+
+- Router, Routes, Route
+  ![](md-img/7.5-1.png)
+  Router, Routes, Route는 react-router-dom에서 만들어놓은 컴포넌트.
+
+`<Switch> </Switck>`는 Route를 찾는 역할이고, Route는 url같은 걸 의미함.
+![](md-img/7.5-2.png)
+
+그리고 Route를 Routes가 찾으면 컴포넌트를 Router렌더링.
+![](md-img/7.5-3.png)
+
+react-router-dom 버전 변경으로(5 -> 6) 아래와 같이 코드 입력. (Switch가 Routes로 변경)
+![](7.5-md-img/7.5-4.png)
+
+Routes를 쓰는 이유는 한번에 하나의 Route만 렌더링 하기 위해서.
+
+- Link
+  그럼 이제는 Route들 간에 연결을 시켜주자. (Route에서 다른 Route로 이동)
+  html에서 <a>달아서 이동시킬 수도 있지만 그렇게 하면 페이지가 새로고침 된다. react에서는 새로고침 되지 않고 작동하는 페이지를 만들 거다.
+
+![](/md-img/7.5-5.png)
+Movie.js로 다시 돌아와서 Link를 import 하고 `<Link to="[주소]">  </Link>`로 감싸주면 된다.
+
+<br>
+
+### - 7.6 Parameters
