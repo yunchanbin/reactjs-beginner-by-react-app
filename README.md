@@ -1,5 +1,6 @@
 # ReactJS으로 영화 웹 서비스 만들기-2
 
+<small>
 - [ReactJS으로 영화 웹 서비스 만들기-2](#reactjs으로-영화-웹-서비스-만들기-2)
 - [2 THE BASICS OF REACT](#2-the-basics-of-react)
   - [- 2.0 Introduction](#--20-introduction)
@@ -43,6 +44,7 @@
   - [- 7.6 Parameters](#--76-parameters)
   - [- 7.7 Publishing](#--77-publishing)
   - [- 7.9 Style](#--79-style)
+</small>
 
 # 2 THE BASICS OF REACT
 
