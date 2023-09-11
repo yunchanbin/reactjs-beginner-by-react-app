@@ -11,6 +11,7 @@ function Home() {
       )
     ).json();
 
+    console.log(json.data.movies);
     setMovies(json.data.movies);
     setLoading(false);
   };

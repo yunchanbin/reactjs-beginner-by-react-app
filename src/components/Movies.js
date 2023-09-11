@@ -1,5 +1,6 @@
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import styled from "../css/Movies.module.css";
 
 function Moive({ id, coverImg, title, summary, genres }) {
   return (
